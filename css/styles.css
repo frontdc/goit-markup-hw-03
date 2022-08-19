@@ -60,6 +60,8 @@ button {
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+
+
 }
 
 
@@ -112,6 +114,8 @@ button {
 
 .logo-footer {
     color:  var(--logo-footer);
+
+    margin-bottom: 20px;
 }
 
 .logo-footer:visited {
@@ -163,9 +167,9 @@ button {
 
         padding-top: 200px;
         padding-bottom: 200px;
-        
 
-        
+        margin-bottom: 94px;
+
 
         
 }
@@ -233,6 +237,25 @@ button {
     margin: -1px;
 }
 
+
+
+
+.pecularities-list {
+    display: flex;
+    column-gap: 30px;
+
+    margin-top: 0;
+    margin-bottom: 94px;
+
+   
+       
+}
+
+.pecularities-card {
+    flex-basis: calc((100% - 90px) / 4);
+    
+}
+
 .peculiarities-title {
         
         font-size: inherit;
@@ -240,6 +263,8 @@ button {
         text-transform: uppercase;
 
         color: var(--primary-txt-color);
+
+        margin-bottom: 10px;
 }
 
 
@@ -251,10 +276,21 @@ button {
         color: var(--secondary-txt-color);
 }
 
+.our-services {
+    padding-bottom: 94px;
+}
+
 .section-title {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.type-cards {
+    display: flex;
+    column-gap: 30px;
 }
 
 
@@ -268,11 +304,27 @@ button {
     background-color: var(--white-color);
 }
 
+.team-list {
+    display: flex;
+    column-gap: 30px;
+
+    padding-bottom: 94px;
+}
+
+.team-card {
+    flex-basis: calc((100% - 90px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
 .member-name {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
        
 }
 
@@ -282,6 +334,8 @@ button {
     text-align: center;
     
     color: var(--secondary-txt-color);
+
+    margin-bottom: 30px;
 }
 
 
@@ -289,6 +343,9 @@ button {
 
 footer {
     background-color: var(--secondary-bg-color);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
     
 }
 
@@ -298,9 +355,13 @@ address .address-link {
      line-height: 1.71;
     
      color: var(--white-color);
+     
 
 }
 
+address .address-item:not(last-child) {
+    margin-bottom: 9px;
+}
 
 
 
