@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
 
   <link rel="stylesheet" href="./css/styles.css">
 
@@ -18,13 +19,13 @@
 
 <body>
   <!--Хедер-->
-  <header>
+  <header class="page-header">
     <!--Панель навигации в хедере-->
-
-    <nav>
+    <div class="container page-header-flex""> 
+    <nav class="page-nav">
       <a href="./index.html" class="logo-header"> <span class="logo-accent">Web</span>Studio </a>
 
-      <ul>
+      <ul class="nav-menu">
         <li> <a class="nav-link current" href="./index.html">Студія</a> </li>
         <li> <a class="nav-link" href="./portfolio.html">Портфоліо</a> </li>
         <li> <a class="nav-link" href="">Контакти</a> </li>
@@ -32,11 +33,12 @@
       </ul>
     </nav>
 
-    <ul>
-      <li><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+    <ul class="contacts-menu">
+      <li><a class="contacts-link mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
       <li><a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
     </ul>
-
+    
+    </div>
 
   </header>
 
@@ -47,9 +49,11 @@
       <!--Герой-->
 
       <section class="hero">
+      <div class="container">
         <h1 class="hero-title">Ефективні рішення для <br>вашого бізнесу</h1>
         <button type="button" class="main-button"> Замовити послугу </button>
       </section>
+      </div>
    
 
     <!--Секция с особеностями-->

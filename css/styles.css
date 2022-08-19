@@ -21,9 +21,24 @@ body {
 
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
 
-ul {
+ul, ol {
     list-style: none;
+    
+    margin-left: 0;
+    margin-right: 0;
+  
+    padding-left: 0;
+    
 }
 
 a {
@@ -39,10 +54,52 @@ button {
     border: 0;
 }
 
+.container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.page-header-flex {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.contacts-menu {
+    display: flex;
+    align-items: center;
+
+    margin-left: auto;
+    
+}
+
+.mail {
+    margin-right: 50px;
+}
 
 
 .logo {
     color: var(--logo-color);
+}
+
+.logo-header {
+    margin-right: 93px;
+    
 }
 
 .logo-accent {
@@ -93,11 +150,15 @@ button {
     letter-spacing: 0.02em;
 
     color: var(--secondary-txt-color);
+
+    
 }
 
 .hero {
         background-color: var(--secondary-bg-color);
 }
+
+
 
 .hero-title {
         font-weight: 900;
