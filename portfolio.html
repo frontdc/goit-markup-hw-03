@@ -19,33 +19,34 @@
 
 <body>
     <!--Хедер-->
-    <header>
+    <header class="page-header-portfolio">
         <!--Панель навигации в хедере-->
-    
-        <nav>
+        <div class="container page-header-flex""> 
+        <nav class=" page-nav">
             <a href="./index.html" class="logo-header"> <span class="logo-accent">Web</span>Studio </a>
     
-            <ul>
+            <ul class="nav-menu">
                 <li> <a class="nav-link" href="./index.html">Студія</a> </li>
-                <li> <a class="nav-link current" href="./portfolio.html">Портфоліо</a> </li>
+                <li> <a class="nav-link  current" href="./portfolio.html">Портфоліо</a> </li>
                 <li> <a class="nav-link" href="">Контакти</a> </li>
     
             </ul>
-        </nav>
+            </nav>
     
-        <ul>
-            <li><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+            <ul class="contacts-menu">
+                <li><a class="contacts-link mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
     
+        </div>
     
     </header>
 
 
-
     <main> 
 
-        <section>
+        <section class="section">
+            <div class="container">
             <h1 class="visually-hidden">Портфоліо</h1>
 
             <!--Кнопки-фильтры-->
@@ -76,7 +77,7 @@
             <!--Карточки обёрнуты в ссылку, так как, по моему мнению, именно так задумал дизайнер-->
 
             <ul class="cards">
-                 <li>
+                 <li class="portfolio-card">
                     <a href="">
                         <img
                             src="./portfolio_images/img1.jpg"
@@ -89,7 +90,7 @@
                     </a>
                  </li>
 
-                 <li>
+                 <li class="portfolio-card">
                     <a href="">
                         <img 
                             src="./portfolio_images/img2.jpg" 
@@ -102,7 +103,7 @@
                     </a>
                  </li>
                  
-                 <li>
+                 <li class="portfolio-card">
                     <a href="">
                         <img 
                             src="./portfolio_images/img3.jpg" 
@@ -115,7 +116,7 @@
                     </a>
                  </li>
 
-                 <li>
+                 <li class="portfolio-card">
                     <a href="">
                         <img 
                         src="./portfolio_images/img4.jpg" 
@@ -128,7 +129,7 @@
                     </a>
                  </li>
 
-                 <li>
+                 <li class="portfolio-card">
                     <a href="">
                         <img 
                             src="./portfolio_images/img5.jpg" 
@@ -141,7 +142,7 @@
                     </a>
                  </li>
 
-                 <li>
+                 <li class="portfolio-card">
                     <a href="">
                         <img 
                             src="./portfolio_images/img6.jpg" 
@@ -154,7 +155,7 @@
                     </a>
                  </li>
 
-                 <li>
+                 <li class="portfolio-card">
                     <a href="">
                         <img 
                             src="./portfolio_images/img7.jpg" 
@@ -167,7 +168,7 @@
                     </a>
                  </li>
                  
-                 <li>
+                 <li class="portfolio-card">
                     <a href="">
                         <img 
                             src="./portfolio_images/img8.jpg" 
@@ -180,7 +181,7 @@
                     </a>
                  </li>
 
-                 <li>
+                 <li class="portfolio-card">
                     <a href="">
                         <img 
                             src="./portfolio_images/img9.jpg" 
@@ -193,6 +194,7 @@
                     </a>
                  </li>
             </ul>
+            </div>
 
         </section>
 
@@ -209,24 +211,27 @@
 
 <footer>
 
-    <a href="./index.html" class="logo-footer"> <span class="logo-accent">Web</span>Studio </a>
+    <div class="container">
+        <a href="./index.html" class="logo-footer"> <span class="logo-accent">Web</span>Studio </a>
 
-    <!--ОбЪединяю все контакты в один список, так как это однотипный контент-->
-    <address>
-        <ul>
-            <li>
-                <a class="address-link" href="">м. Київ, пр-т Лесі Українки, 26</a>
-            </li>
+        <!--ОбЪединяю все контакты в один список, так как это однотипный контент-->
+        <address>
+            <ul>
+                <li class="address-item">
+                    <a class="address-link" href="">м. Київ, пр-т Лесі Українки, 26</a>
+                </li>
 
-            <li>
-                <a class="contacts-link rgba" href="mailto:info@example.com">info@example.com</a>
-            </li>
+                <li class="address-item">
+                    <a class="contacts-link rgba" href="mailto:info@example.com">info@example.com</a>
+                </li>
 
-            <li>
-                <a class="contacts-link rgba" href="tel:+380991111111">+38 099 111 11 11</a>
-            </li>
-        </ul>
-    </address>
+                <li class="address-item">
+                    <a class="contacts-link rgba" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+            </ul>
+        </address>
+
+    </div>
 
 </footer>
 

@@ -64,6 +64,15 @@ button {
 
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom:94px;
+}
+
+.page-header {
+    border-bottom: 1px solid #000000;
+}
+
 
 .page-header-flex {
     display: flex;
@@ -168,7 +177,7 @@ button {
         padding-top: 200px;
         padding-bottom: 200px;
 
-        margin-bottom: 94px;
+        
 
 
         
@@ -205,14 +214,14 @@ button {
         color: var(--white-color);
         background-color: var(--accent-color);
 
+        border: 1px solid #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+
         display: block;
 
         margin-left: auto;
-        margin-right: auto;
-
-        
-
-        
+        margin-right: auto;  
 
         
 }
@@ -245,14 +254,12 @@ button {
     column-gap: 30px;
 
     margin-top: 0;
-    margin-bottom: 94px;
-
-   
-       
+           
 }
 
 .pecularities-card {
     flex-basis: calc((100% - 90px) / 4);
+
     
 }
 
@@ -276,7 +283,10 @@ button {
         color: var(--secondary-txt-color);
 }
 
+/* Дав цій секції окремий клас, адже якщо слідувати за ТЗ домашньої роботи, то буде помилка */
+
 .our-services {
+    padding-top: 0px;
     padding-bottom: 94px;
 }
 
@@ -308,7 +318,7 @@ button {
     display: flex;
     column-gap: 30px;
 
-    padding-bottom: 94px;
+    
 }
 
 .team-card {
@@ -346,6 +356,7 @@ footer {
 
     padding-top: 60px;
     padding-bottom: 60px;
+
     
 }
 
@@ -359,9 +370,12 @@ address .address-link {
 
 }
 
-address .address-item:not(last-child) {
+
+
+address .address-item:not(:last-child) {
     margin-bottom: 9px;
 }
+
 
 
 
@@ -378,6 +392,22 @@ address .contacts-link.rgba:focus {
 
 /* Оформление portfolio.html */
 
+.page-header-portfolio {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.filter-buttons {
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    
+    column-gap: 8px;
+
+    margin-bottom: 34px;
+}
+
+
+
 .filter-buttons button {
     font-family: inherit;
     font-weight: 500;
@@ -387,6 +417,10 @@ address .contacts-link.rgba:focus {
 
     color: var(--primary-txt-color);
     background-color: var(--grey-bg-color);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    
     
 }
 
@@ -403,6 +437,28 @@ address .contacts-link.rgba:focus {
     cursor: pointer;
 }
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+    
+    
+}
+
+.portfolio-card {
+    background: var(--white-color);
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+
+    width: 370px;
+
+    
+
+    
+}
+
 .card-title {
         font-size: 18px;
         line-height: 2;
@@ -410,6 +466,10 @@ address .contacts-link.rgba:focus {
         
         
         color: var(--primary-txt-color);
+
+        margin-bottom: 4px;
+        margin-left: 24px;
+        
 
         
 }
@@ -420,4 +480,7 @@ address .contacts-link.rgba:focus {
         line-height: 1.87;
         
         color: var(--secondary-txt-color);
+
+        margin-bottom: 20px;
+        margin-left: 24px;
 }
